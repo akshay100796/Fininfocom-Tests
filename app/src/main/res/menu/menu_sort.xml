@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/id_menu_age"
+        android:title="@string/sort_by_age" />
+
+    <item android:id="@+id/id_menu_city"
+        android:title="@string/sort_by_city" />
+
+    <item android:id="@+id/id_menu_name"
+        android:title="@string/sort_by_name" />
+</menu>

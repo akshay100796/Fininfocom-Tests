@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.LoginActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_logo_front"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_30ssp" />
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/id_label_login"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/login"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textSize="@dimen/_30ssp"-->
+<!--            android:textColor="@color/black"-->
+<!--   />-->
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_marginStart="@dimen/_10ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_input_email_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:layout_marginEnd="@dimen/_10ssp"
+            app:boxStrokeWidth="2dp"
+            android:textColorHint="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10ssp"
+                android:maxLength="10"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                android:padding="@dimen/_14ssp"
+                android:background="@drawable/drf_black_back" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/id_error_text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apologized_invalid_username"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:textColor="@android:color/holo_red_light" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_marginStart="@dimen/_10ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_input_password_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:layout_marginEnd="@dimen/_10ssp"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeColor="@color/blue"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10ssp"
+                android:padding="@dimen/_12ssp"
+                android:background="@drawable/drf_black_back"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/id_error_text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10ssp"
+            android:text="@string/apologized_invalid_password"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:textColor="@android:color/holo_red_light" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/id_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/_10ssp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_marginEnd="@dimen/_10ssp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

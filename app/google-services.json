@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "180662620191",
+    "project_id": "fininfocom-tests",
+    "storage_bucket": "fininfocom-tests.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180662620191:android:15279415c13b0f167d852a",
+        "android_client_info": {
+          "package_name": "com.codexdroid.fininfocomtests"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa9-1NEczjjCRmFlwOM2ZX5x7AwjnubEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
